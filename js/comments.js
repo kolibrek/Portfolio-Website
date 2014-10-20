@@ -54,9 +54,9 @@ function determineAge(now, date)
   } else if (hours >= 1) {
     return Math.floor(hours) + "h ago";
   } else if (minutes >= 1) {
-    return Math.floor(minutes) + " min. ago";
+    return Math.floor(minutes) + " m ago";
   } else {
-    return Math.floor(seconds) + " sec. ago";
+    return Math.floor(seconds) + " s ago";
   }
 }
 
@@ -64,5 +64,6 @@ function submitComment()
 {
   $('form').submit(function() {
     console.log("form submitted...");
+    alert("Thank you for your input!  Have a nice day!");
   });
 }

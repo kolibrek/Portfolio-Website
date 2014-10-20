@@ -1,6 +1,6 @@
 html, body
 {
-  background: url("../images/noisy-texture-2.png");
+  background: url("../images/noisy-texture.png");
   background-color: #111;
   color: #959595;
   font-family: 'Exo 2','Arial', sans-serif;
@@ -27,8 +27,8 @@ nav
 {
 	nav .logo
 	{
-		height: 59px;
-		width: 41px;
+    height: 60px;
+    width: 45px;
 		margin: 2px;
 		float: left;
 		margin-left: 5%;
@@ -64,8 +64,8 @@ nav
 {
 	nav .logo
 	{
-	  height: 59px;
-	  width: 41px;
+    height: 60px;
+    width: 45px;
 	  margin: 2px;
 	  float: left;
 	  margin-left: 20%;
@@ -201,8 +201,9 @@ article .feature-text
   text-align: center;
   margin-left: 20%;
   margin-right: 20%;
+  padding-top: 30px;
+  padding-bottom: 30px;
   height: 40%;
-  max-height: 750px;
 }
 
 #comments input, #comments textarea
@@ -238,6 +239,19 @@ article .feature-text
   margin-left: 5%;
 }
 
+.comment
+{
+  background-color: #111;
+  margin: 5%;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+
+.comment time
+{
+  float: right;
+}
+
 #home, #photoshop, #illustrator, #audio, #video, #feedback
 {padding-top: 60px;}
 
@@ -248,9 +262,12 @@ article .feature-text
 
 footer
 {
-  margin: 20px;
+  margin: 0px;
+  margin-top: 20px;
+  padding: 20px;
   font-size: 18px;
   text-align: center;
+  background-color: #222;
 }
 
 /* ---UI Elements--- */
