@@ -98,7 +98,7 @@ nav
 nav:hover, nav.past-intro
 {
   background-color: rgba(0,0,0,0.8);
-  box-shadow: 2px 2px 5px black;
+  box-shadow: 0 0 20px 0 black;
 }
 
 nav a:hover, nav a.active:hover
@@ -272,6 +272,7 @@ footer
   font-size: 18px;
   text-align: center;
   background-color: #222;
+  box-shadow: 0 0 20px 0px black;
 }
 
 /* ---UI Elements--- */
@@ -320,7 +321,7 @@ footer
   margin: 5px;
   cursor: pointer;
   box-shadow: 2px 2px 5px black;
-  transition: background-color 400ms;
+  transition: all 400ms;
   background-color: #222;
 }
 
