@@ -120,8 +120,8 @@ nav a.active
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  text-align: center;
   min-height: 100vh;
+  text-align: center;
 }
 
 #intro
@@ -178,6 +178,10 @@ article
   justify-content: center;
   margin: 5%;
   margin-top: 0%;
+  /*box-shadow: 0px 0 20px 0px black;
+  padding: 5px;*/
+
+
 }
 
 article .feature-art
@@ -187,6 +191,8 @@ article .feature-art
   background-color: #993333;
   max-height: 400px;
   box-shadow: 2px 2px 5px black;
+  transition: all 500ms;
+
 }
 
 article .feature-text
