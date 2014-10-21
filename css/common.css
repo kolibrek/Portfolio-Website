@@ -395,42 +395,6 @@ footer
   float: right;
 }
 
-
-.parallax
-{
-  perspective: 1px;
-  perspective-origin: 50% 50%;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-.parallax-layer
-{
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 100vh 0;
-}
-
-.parallax-group {
-  position: relative;
-  height: 100vh;
-  transform-style: preserve-3d;
-}
-
-.parallax-base
-{
-  transform: translateZ(0);
-}
-
-.parallax-back
-{
-  transform: translateZ(-1px) scale(2);
-}
-
 @-webkit-keyframes pulse
 {
   0% {opacity: 0;}
