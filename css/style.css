@@ -7,6 +7,8 @@ html, body {
 	font-size: 24px;
 }
 
+/* --- Navigation --- */
+
 nav {
 	background-color: rgba(0,0,0,0);
 	transition: all 700ms;
@@ -42,6 +44,8 @@ nav a.active {
 	background-color: #993333;
 	box-shadow: 1px 1px 3px black;
 }
+
+/* --- Content --- */
 
 #intro {
 	/*http://placehold.it/1920x900*/
