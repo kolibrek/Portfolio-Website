@@ -101,6 +101,7 @@ article .feature-art {
 	font-family: Helvetica;
 	font-size: 14px;
 	color: white;
+	transition: all 300ms;
 }
 
 #comments input:focus, #comments textarea:focus {
