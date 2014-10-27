@@ -8,7 +8,7 @@ function testInView($el) {
 }
 function setInView() {
     $(".active").removeClass("active");
-    $("div.page").each(function(){
+    $("section.page").each(function(){
         var $zis = $(this);
         if(testInView($zis)){
            $zis.addClass("active");
