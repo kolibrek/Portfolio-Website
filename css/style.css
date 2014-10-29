@@ -130,6 +130,7 @@ footer {
 
 .button:hover {
 	animation: ripple 1s ease infinite;
+	-webkit-animation: ripple 1200ms ease infinite;
 }
 
 .thumb {
@@ -175,8 +176,23 @@ footer {
 		outline-width: 2px;
 		outline-color: rgba(255,255,255,0);
 	}
+	30% {
+		outline-color: rgba(255,255,255,0.5);
+	}
+	100% {
+		outline-offset: 20px;
+		outline-color: rgba(255,255,255,0)
+	}
+}
+
+@-webkit-keyframes ripple {
+	0% {
+		outline-offset: 0;
+		outline-width: 2px;
+		outline-color: rgba(255,255,255,0);
+	}
 	10% {
-		outline-color: rgba(255,255,255,1);
+		outline-color: rgba(255,255,255,0.5);
 	}
 	100% {
 		outline-offset: 20px;

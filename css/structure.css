@@ -67,16 +67,21 @@ nav ul li a {
 
 /* ---Content--- */
 
+main {
+	display: none;
+}
+
 .page
 {
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
-	min-height: 100vh;
+/*	min-height: 100vh;*/
 	text-align: center;
 }
 
 #intro {
+	min-height: 100vh;
 	position: relative;
 	top: -100px;
 }
