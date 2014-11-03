@@ -32,8 +32,8 @@ function loadThumbnails() {
 
 $(document).ready(function () {
 	loadThumbnails();
-	
-  // Adds behavior to make image thumbnails result in a full size popup when clicked.
+
+	// Adds behavior to make image thumbnails result in a full size popup when clicked.
 	$('.thumb').click(function () {
 		var popup = $(this).next('.popup');
 		popup.removeClass('hidden');
@@ -42,7 +42,7 @@ $(document).ready(function () {
 	$('.popup').click(function () {
 		$(this).addClass('hidden');
 	});
-	
+
 });
 
 

@@ -7,27 +7,27 @@ function testInView($el) {
 	return (((eTop <= wMid) && (eBot >= wMid)));
 }
 function setInView() {
-    $(".active").removeClass("active");
-    $("section.page").each(function(){
-        var $zis = $(this);
-        if(testInView($zis)){
-           $zis.addClass("active");
-            $("a[href='#"+$zis.attr("id")+"']").addClass("active");
-        }
-    });
-    var intro = $("#intro");
-    if (intro.length == 0 || !testInView(intro)){
-      $("nav").addClass("past-intro");
-    } else {
-      $("nav").removeClass("past-intro");
-    }
+	$(".active").removeClass("active");
+	$("section.page").each(function(){
+		var $zis = $(this);
+		if(testInView($zis)){
+			$zis.addClass("active");
+			$("a[href='#"+$zis.attr("id")+"']").addClass("active");
+		}
+	});
+	var intro = $("#intro");
+	if (intro.length == 0 || !testInView(intro)){
+		$("nav").addClass("past-intro");
+	} else {
+		$("nav").removeClass("past-intro");
+	}
 }
 $(document).scroll(function(){
-    setInView();
+	setInView();
 });
 $(document).resize(function(){
-    setInView();
+	setInView();
 });
 $(document).ready(function(){
-    setInView();
+	setInView();
 });
