@@ -39,26 +39,26 @@
 			<h2>featured work</h2>
 			<div class="image-set">
 				{{#each photoshop}}
-				<div id="image">
+				<figure>
 					<img class="thumb" src={{ref}}></img>
 					<div class="popup hidden">
 						<img class="full-image" src={{ref}}></img>
-						<span class="description">{{des}}</span>
+						<figcaption>{{des}}</figcaption>
 					</div>
-				</div>
+				</figure>
 				{{/each}}
 			</div>
 			<br><br>
 			<h2>tutorials</h2>
 			<div class="image-set">
 				{{#each ps_tutorial}}
-				<div id="image">
+				<figure>
 					<img class="thumb" src={{ref}}></img>
 					<div class="popup hidden">
 						<img class="full-image" src={{ref}}></img>
-						<span class="description">{{des}}</span>
+						<figcaption>{{des}}</figcaption>
 					</div>
-				</div>
+				</figure>
 				{{/each}}
 			</div>
 		</script>
