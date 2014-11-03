@@ -1,8 +1,3 @@
-$(document).ready(function() {
-
-	loadThumbnails();
-});
-
 function loadThumbnails() {
 	var template = Handlebars.compile($("#thumb-template").html());
 	var data =
@@ -34,3 +29,20 @@ function loadThumbnails() {
 
 	$('#images').html(template(data));
 }
+
+$(document).ready(function () {
+	loadThumbnails();
+	
+  // Adds behavior to make image thumbnails result in a full size popup when clicked.
+	$('.thumb').click(function () {
+		var popup = $(this).next('.popup');
+		popup.removeClass('hidden');
+	});
+
+	$('.popup').click(function () {
+		$(this).addClass('hidden');
+	});
+	
+});
+
+

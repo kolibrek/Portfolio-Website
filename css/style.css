@@ -133,30 +133,6 @@ footer {
 	-webkit-animation: ripple 1200ms ease infinite;
 }
 
-.thumb {
-	box-shadow: 2px 2px 5px black;
-	transition: all 400ms;
-	background-color: #222;
-}
-
-.thumb:hover {
-	background-color: #333;
-}
-
-.popup {
-	background-color: rgba(0,0,0,0.9);
-}
-
-.popup #info {
-	background-color: #111;
-}
-
-.tooltip {
-	font-size: 18px;
-	background-image: url("../images/red_tag.png");
-	background-repeat: no-repeat;
-	color: #FFF;
-}
 
 @-webkit-keyframes pulse {
 	0% {opacity: 0;}

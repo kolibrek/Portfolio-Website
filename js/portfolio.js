@@ -7,32 +7,6 @@ $(document).ready(function() {
     }
     $('body').scrollTo($(this).attr('href'), 1000);
   });
-
-  // Adds behavior to make image thumbnails result in a full size popup when clicked.
-  var thumb = $('.thumb');
-  var popup = $('.popup');
-
-  thumb.hover(function() {
-    var elements = $(this).parent().children();
-    var span = $(elements[0]);
-    span.slideToggle(100);
-  });
-
-  thumb.click(function() {
-    var elements = $(this).parent().children();
-    var title = $(elements[0]);
-    var des = $(elements[1]);
-    var image = popup.children().first();
-    var description = popup.children("#info");
-    image.attr('src', $(this).attr('src'));
-    description.html(title.html() + " - " + des.html());
-    popup.fadeIn();
-  });
-
-  popup.click(function() {
-    $(this).fadeOut(500);
-  });
-
   displayModifiedTime();
 });
 
