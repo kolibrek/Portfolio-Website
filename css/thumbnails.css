@@ -8,20 +8,44 @@
 
 figure {
 	margin: 0px;
+	position: relative;
+	opacity: 0.6;
+	transition: all 500ms;
+}
+
+figure figcaption {
+	position: absolute;
+/*	backface-visibility: hidden;*/
+	top: 5px;
+	left: 0px;
+	padding: 5px;
+	transition: all 500ms;
+	transform: translate3d(50px,0,0);
+	color: #FFF;
+	background: #933;
+	z-index: 2;
+	opacity: 0;
+	box-shadow: 0 0 10px black;	
+}
+
+figure:hover figcaption,
+figure:hover .thumb {
+	transform: translate3d(0,0,0);
+}
+
+figure:hover figcaption,
+figure:hover {
+	opacity: 1;
 }
 
 .thumb {
-	padding: 10px;
 	background: #222;
 	height: 400px;
+	transform: translate3d(0,10px,0);
 	margin: 5px;
 	cursor: pointer;
-	transition: all 300ms;
-	box-shadow: 5px 0 10px black;
-}
-
-.thumb:hover {
-	background: #444;
+	transition: all 500ms;
+	box-shadow: 0 0 10px black;	
 }
 
 .popup {
@@ -34,6 +58,7 @@ figure {
 	background: rgba(0,0,0,0.8);
 	transition: all 400ms;
 }
+
 .full-image {
 	position: fixed;
 	max-height: 90%;
@@ -42,7 +67,7 @@ figure {
 	transform: translate(-50%, -50%);
 }
 
-figcaption {
+.description {
 	position: fixed;
 	bottom: 0;
 	left: 0;

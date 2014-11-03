@@ -40,10 +40,11 @@
 			<div class="image-set">
 				{{#each photoshop}}
 				<figure>
+					<figcaption>{{title}}</figcaption>
 					<img class="thumb" src={{ref}}></img>
 					<div class="popup hidden">
 						<img class="full-image" src={{ref}}></img>
-						<figcaption>{{des}}</figcaption>
+						<span class="description">{{des}}</span>
 					</div>
 				</figure>
 				{{/each}}
@@ -53,10 +54,11 @@
 			<div class="image-set">
 				{{#each ps_tutorial}}
 				<figure>
+					<figcaption>{{title}}</figcaption>
 					<img class="thumb" src={{ref}}></img>
 					<div class="popup hidden">
 						<img class="full-image" src={{ref}}></img>
-						<figcaption>{{des}}</figcaption>
+						<span class="description">{{des}}</span>
 					</div>
 				</figure>
 				{{/each}}
