@@ -1,0 +1,67 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	background: #111;
+	font-family: 'Exo 2','Arial', sans-serif;
+	font-weight: 100;
+	font-size: 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 100;
+}
+
+nav {
+	position: fixed;
+	color: white;
+	top: 0;
+	left: 0;
+}
+
+nav .logo {
+	position: fixed	;
+	top: 0;
+	left: 0;
+	height: 92px;
+	width: 69px;
+	margin: 12px;
+	background: #933;
+}
+
+nav h1 {
+	position: fixed;
+	top: -0.4em;
+	left: 3em;
+	min-width: 7em;
+}
+
+nav h2 {
+	color: #933;
+	font-size: 1em;
+	position: fixed;
+	top: 1.6em;
+	left: 5em;
+}
+
+.triangle-topleft {
+	height: 0;
+	border-top: 5em solid rgba(0,0,0,0.5);
+	border-right: 150em solid transparent;
+}
+
+main {
+	display: flex;
+	margin-top: 6em;
+	flex-flow: row wrap;
+/*	justify-content: left;*/
+}
+
+section {
+	width: auto;
+	min-width: 20em;
+	padding-left: 20px;
+	background: #191919;
+	border-top: 0.5em solid #222;
+	margin: 30px;
+	color: white;
+}
