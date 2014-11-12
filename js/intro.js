@@ -117,8 +117,9 @@ function animateIntro() {
 }
 
 $(document).ready(function () {
-	var mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent);
-	if (!mobile) {
+	var mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent),
+		url = document.URL;
+	if (!mobile && !url.contains("#")) {
 		animateIntro();
 	} else {
 		var $intro = $('.intro-container');

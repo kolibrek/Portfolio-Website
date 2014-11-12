@@ -2,94 +2,46 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Kevin Clemons Portfolio | Home</title>
+		<meta name="viewport" content="width=device-width">
+		<title>Kevin Clemons - Portfolio</title>
+		<link rel="stylesheet" href="css/style.css"></link>
+		<link rel="stylesheet" href="css/intro.css"></link>
 		<link href='http://fonts.googleapis.com/css?family=Exo+2:200,400' rel='stylesheet' type='text/css'></link>
-	<link rel="icon" type="image/png" id="favicon" href="favicon.png"></link>
-<link rel="stylesheet" href="css/structure.css"></link>
-<link rel="stylesheet" href="css/style.css"></link>
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>
-<script src="js/portfolio.js"></script>
-<script src="js/testInView.js"></script>
-<script src="js/load.js"></script>
-<!-- script src="js/comments.js"></script -->
-</head>
-<body>
-	<nav>
-		<a class="logo" href="#intro"><img src="images/logo.svg"></img></a>
-	<ul>
-		<li><a class="internal" href="#home">Kevin Clemons</a></li>
-		<li><a class="internal" href="#photoshop">Photoshop</a></li>
-		<li><a class="internal" href="#illustrator">Illustrator</a></li>
-		<li><a class="internal" href="#audio">Audio</a></li>
-		<li><a class="internal" href="#video">Video</a></li>
-		<li><a class="internal" href="#feedback">Feedback</a></li>
-	</ul>
-	</nav>
-<main>
-	<section id="intro" class="page active"><span id="hint">scroll down</span></section>
-	<section id="home" class="page">
-		<h1>Kevin Clemons' Portfolio</h1>
-		<article>
-			<img class="feature-art" src="images/logo.svg" height=300 width=225></img>
-		<div class="feature-text">
-			<p>A guy that likes art, animation, design, coding, and linguistics.  Sometimes I even make stuff!</p>
-			<p>This site was set up to showcase my art and design projects. It was created from scratch using open source libraries and software.</p>
-			<a class="button internal" href="#feedback">contact me</a>
+		<link rel="icon" type="image/png" id="favicon" href="favicon.png"></link>
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/velocity/velocity.min.js"></script>
+		<script src="js/intro.js"></script>
+	</head>
+	<body>
+		
+		<main>
+			<section id="front">
+			</section>
+			<section id="feedback">
+			</section>
+			<button>+</button>
+		</main>
+		
+		<nav>
+			<div>
+				<a href="index.html"><img class="logo" src="images/logo.svg"></img></a>
+				<h1><a href="index.html">Kevin Clemons</a></h1>
+				<h2>@KoliberMedia</h2>
+				<ul>
+					<li><a class="sliding" href="photoshop.html">photoshop</a></li>
+					<li><a class="sliding" href="illustrator.html">illustrator</a></li>
+					<li><a class="sliding" href="#">audio</a></li>
+					<li><a class="sliding" href="#">video</a></li>
+					<li><a class="sliding" href="#feedback">feedback</a></li>
+				</ul>
+				<button>=</button>
+			</div>
+		</nav>
+
+		<div id="welcome" class="intro-container">
+			<div class="circle nucleus"></div>
+			<p>click anywhere to skip intro</p>
 		</div>
-		</article>
-	</section>
-<section id="photoshop" class="page">
-	<h1>Photoshop Feature</h1>
-	<article>
-		<img class="feature-art" src="images/photoshop/AlbumArt.png"></img>
-	<div class="feature-text">
-		<p>In celebration of the latest album released by <a href="http://www.youarestars.com">Stars</a>, on <time>October 14, 2014</time>, <i>No One Is Lost</i>, this is a tribute redesign of their album from 2012, <i>The North</i>.</p>
-		<p>An alternative rock band from Montreal, Stars first released full-lenth album was <i>Nightsongs</i> in 2000.</p>
-		<a class="button external" href="photoshop.html">see more</a>
-	</div>
-	</article>
-</section>
-<section id="illustrator" class="page">
-	<h1>Illustrator Feature</h1>
-	<article>
-		<img class="feature-art" src="images/illustrator/vector_portrait.png"></img>
-	<div class="feature-text">
-		<p>An image trace of myself, made in Illustrator.</p>
-		<p>The image was manipulated into a low color-count vector and can be resized without any loss of fidelity.</p>
-		<a class="button external" href="illustrator.html">see more</a>
-	</div>
-	</article>
-</section>
-<section id="audio" class="page">
-	<h1>Audio</h1>
-	<article>
-		<div class="feature-text">
-			<p>Audio feature to be added here...</p>
-		</div>
-	</article>
-</section>
-<section id="video" class="page">
-	<h1>Video</h1>
-	<article>
-		<div class="feature-text">
-			<p>Video feature to be added here...</p>
-		</div>
-	</article>
-</section>
-<section id="feedback" class="page">
-	<h1>Tell me what you think.</h1>
-	<div id="comments">
-		<form id="form">
-			<input type="text" name="name" placeholder="Name" maxlength="100"></input>
-			<input type="text" name="email" placeholder="E-mail" maxlength="100"></input>
-		<textarea name="comments" placeholder="Your comment here." required="true"></textarea>
-		<input type="submit" value="Submit"></input>
-	</form>
-</section>
-</div>
-</main>
-<footer>
-</footer>
-</body>
+
+	</body>
 </html>
