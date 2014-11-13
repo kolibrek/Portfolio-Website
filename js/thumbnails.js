@@ -8,7 +8,10 @@ function loadThumbnails() {
 				{ref: "images/photoshop/DigitalMediaText-med.png", title: "Digital Media Text Art", des: "A word art piece focused on digital media."},
 				{ref: "images/photoshop/TextArt_med.png", title: "Text Art", des: "A word art piece focused on the art of minimalism."},
 				{ref: "images/photoshop/Brochure.jpg", title: "Brochure", des: "A brochure giving information about the Digital Media school."},
-				{ref: "images/photoshop/Poster.jpg", title: "Poster", des: "A poster for the Digital Media department."}
+				{ref: "images/photoshop/Poster.jpg", title: "Poster", des: "A poster for the Digital Media department."},
+				{ref: "images/photoshop/KnightScreen2.png", title: "Face Your Fears", des: "Edited version of the background image for the magazine"},
+				{ref: "images/photoshop/SnowSpider02.png", title: "Snow Spider", des: "A creature created as reference for a 3D model"},
+				{ref: "images/photoshop/sketch002.png", title: "Sketches", des: "Some quick sketches made in Photoshop"}
 			], ps_tutorial: [
 				{ref: "images/photoshop/IC1_Kevin_Clemons.png", title: "No Kissing", des: "First photoshop tutorial."},
 				{ref: "images/photoshop/IC2_Kevin_Clemons.png", title: "Idaho", des: "Second photoshop tutorial."},
