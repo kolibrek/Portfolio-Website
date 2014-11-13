@@ -48,7 +48,7 @@ nav {
 	}
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1600px) {
 	nav button {
 		display: none;
 	}
@@ -142,7 +142,7 @@ button {
 }
 
 button:hover {
-	background: #F33;
+	background: #C33;
 }
 
 main button {
