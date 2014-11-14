@@ -8,8 +8,10 @@
 		<link rel="stylesheet" href="css/style.css"></link>
 		<link rel="stylesheet" href="css/thumbnails.css"></link>
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/velocity/velocity.min.js"></script>
 		<script src="bower_components/handlebars/handlebars.min.js"></script>
 		<script src="js/thumbnails.js"></script>
+		<script src="js/nav.js"></script>
 	</head>
 <body>
 
@@ -21,20 +23,27 @@
 	</main>
 	
 	<nav>
-		<div>
-			<a href="index.html"><img class="logo" src="images/logo.svg"></img></a>
-			<h1><a href="index.html">Kevin Clemons</a></h1>
-			<h2>@KoliberMedia</h2>
-			<ul>
-				<li><a class="sliding" href="photoshop.html">photoshop</a></li>
-				<li><a class="sliding active" href="illustrator.html">illustrator</a></li>
-				<li><a class="sliding" href="#">audio</a></li>
-				<li><a class="sliding" href="#">video</a></li>
-				<li><a class="sliding" href="index.html#feedback">feedback</a></li>
-			</ul>
-			<button>=</button>
-		</div>
-	</nav>
+			<div>
+				<a href="index.html"><img class="logo" src="images/logo.svg"></img></a>
+				<h1><a href="index.html">Kevin Clemons</a></h1>
+				<h2>@KoliberMedia</h2>
+				<ul id="bar-menu">
+					<li><a class="sliding" href="photoshop.html">photoshop</a></li>
+					<li><a class="sliding" href="illustrator.html">illustrator</a></li>
+					<li><a class="sliding" href="#">audio</a></li>
+					<li><a class="sliding" href="#">video</a></li>
+					<li><a class="sliding" href="index.html#feedback">feedback</a></li>
+				</ul>
+				<button id="menu-btn"><img src="images/ham.svg"></img></button>
+				<ul id="dropdown-menu">
+					<li><a href="photoshop.html">photoshop</a></li>
+					<li><a href="illustrator.html">illustrator</a></li>
+					<li><a href="#">audio</a></li>
+					<li><a href="#">video</a></li>
+					<li><a href="index.html#feedback">feedback</a></li>
+				</ul>
+			</div>
+		</nav>
 
 	<script id="thumb-template" type="text/x-handlebars-template">
 		<h2>featured work</h2>

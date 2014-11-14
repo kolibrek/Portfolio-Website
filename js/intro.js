@@ -94,7 +94,7 @@ function animateIntro() {
 	}, {display: "none"}, 700, [500, 20]);
 
 	$intro.velocity({
-		opacity: 0,
+		opacity: 0
 	}, {
 		duration: 100,
 		delay: 3800,
@@ -107,7 +107,7 @@ function animateIntro() {
 		$n.velocity("stop", true);
 		$intro.velocity("stop", true)
 		.velocity({
-			opacity: 0,
+			opacity: 0
 		}, {
 			duration: 100,
 			display: "none"
