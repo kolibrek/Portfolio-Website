@@ -123,11 +123,8 @@ main section.active aside {
 @media screen and (max-width: 640px) {
 	main section aside {
 		left: 0;
-		bottom: -100%;
-		max-width: 200px;
-	}
-	main section.active aside {
 		bottom: 0;
+		max-width: 200px;
 	}
 }
 
