@@ -13,14 +13,14 @@ function playIntro() {
 }
 
 $(document).ready(function () {
-	
+
 	if (sessionStorage.first_visit === undefined && $('#intro').length > 0) {
 		playIntro();
 		sessionStorage.first_visit = false;
 	} else {
 		$('#intro').velocity({opacity: 0},{duration: 0, display: "none"});
 	}
-	
+
 	// Control the legal info pane with the button.
 	var legal_pushed = false;
 	$('#legal-btn').click(function (event) {
@@ -28,12 +28,25 @@ $(document).ready(function () {
 		var legal = $('#legal');
 		if (legal_pushed) {
 			$(this).removeClass('active');
-			legal.velocity({translateX: "100%"},{duration: 400, display: "none"});
+			legal.velocity({translateX: "105%"},{duration: 400});
 			legal_pushed = false;
 		} else {
 			$(this).addClass('active');
-			legal.velocity({translateX: "-100%"},{duration: 400, display: "block"});
+			legal.velocity({translateX: "-105%"},{duration: 400});
 			legal_pushed = true;
 		}
-	});	
+	});
+
+	// Control the nav bar in narrow-mode.
+	var nav_pushed = false,
+		nav = $('nav.narrow');
+	$('#nav-btn').click(function (event) {
+		if (nav_pushed) {
+			nav.velocity({translateX: "100%"},{duration: 400});
+			nav_pushed = false;
+		} else {
+			nav.velocity({translateX: "-100%"},{duration: 400});
+			nav_pushed = true;
+		}
+	});
 });

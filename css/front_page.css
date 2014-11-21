@@ -39,7 +39,7 @@ main section#digitus {
 
 main section#contemplation {
 	background-image: url(../images/photography/contemplation.png);
-	background-position: center;
+	background-position: right;
 }
 
 main section#facefear {
@@ -101,33 +101,43 @@ main section#spider {
 	top: 1.1em;
 }
 
+main section aside {
+	visibility: hidden;
+	text-align: left;
+	border-left: 2px white solid;
+	color: #FFF;
+	background: rgba(0,0,0,0.4);
+	position: fixed;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	transition: all 600ms;
+	opacity: 0;
+}
+main section.active aside {
+	visibility: visible;
+	opacity: 1;
+	
+}
+
 @media screen and (max-width: 640px) {
 	main section aside {
-		display: none;
+		left: 0;
+		bottom: -100%;
+		max-width: 200px;
 	}
-	
+	main section.active aside {
+		bottom: 0;
+	}
 }
 
 @media screen and (min-width: 640px) {
 	main section aside {
-		visibility: hidden;
-		text-align: left;
-		border-left: 2px white solid;
-		color: #FFF;
-		background: rgba(0,0,0,0.4);
-		position: fixed;
-		padding-left: 20px;
-		padding-right: 20px;
-		padding-bottom: 20px;
 		right: -245px;
 		top: 20px;
 		max-width: 200px;
-		transition: all 600ms;
-		opacity: 0;
 	}
 	main section.active aside {
-		visibility: visible;
-		opacity: 1;
 		right: 0;
 	}
 }
