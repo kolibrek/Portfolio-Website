@@ -2,9 +2,36 @@ body {
 	margin: 0;
 	padding: 0;
 	color: white;
-	font-family: 'Exo 2','Arial', sans-serif;
+	font-family: 'Exo 2', 'Arial', sans-serif;
 	background: #222;
 /*	overflow: hidden;*/
+}
+
+p {
+	font-family: 'PT Sans', 'Arial', sans-serif;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	overflow: hidden;
+	z-index: 0;
+	cursor: pointer;
+}
+
+a:before {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	transition: all 350ms;
+	z-index: -1;
+}
+
+a:hover:before,
+a.active:before {
+	transform: translateY(-100%);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,7 +43,7 @@ h1 {
 }
 
 h2 {
-	color: #933;
+	color: #A33;
 }
 
 .right {
@@ -25,26 +52,6 @@ h2 {
 
 .left {
 	float: left;
-}
-/***
-*	INTRO SLIDE
-***/
-
-#intro {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	background: #111;
-	height: 100vh;
-	z-index: 9;
-}
-
-#intro .logo {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 }
 
 /***
@@ -57,35 +64,6 @@ main {
 	padding: 0;
 	height: 100%;
 	width: 100%;
-/*	overflow: hidden;*/
-}
-
-main section {
-	display: block;
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	background-size: cover;
-}
-
-main section#digitus {
-	background-image: url(../images/photography/keyboard_002.png);
-	background-position: center;
-}
-
-main section#facefear {
-	background-image: url(../images/photoshop/KnightScreen2.png);
-	background-position: center bottom;
-}
-
-main section#depths {
-	background-image: url(../images/photography/depths.jpg);
-	background-position: center;
-}
-
-main section#spider {
-	background-image: url(../images/photoshop/SnowSpider02.png);
-	background-position: center;
 }
 
 /***
@@ -111,12 +89,12 @@ nav * {
 	padding: 0;
 }
 
-nav div#pages a {
-	color: #FFF;
-}
-
 nav div#more a {
 	color: #777;
+}
+
+nav div a:before {
+	height: 100%;
 }
 
 nav div#pages a:before {
@@ -129,92 +107,88 @@ nav div#more a:before {
 
 nav div a {
 	padding: 14px;
-	overflow: hidden;
-	z-index: 0;
-}
-
-nav div a:before {
-	content: "";
-	position: absolute;
-	top: 100%;
-	left: 0;
-	right: 0;
-	height: 100%;
-	transition: all 350ms;
-	z-index: -1;
-}
-
-nav div a:hover:before,
-nav div a.active:before {
-	transform: translateY(-100%);
 }
 
 /***
-*	LOGO ASIDE
+*	LEGAL NOTICE PANE
 ***/
 
-#site-logo {
+#legal {
 	position: fixed;
-	top: 1em;
-	left: 1em;
-	width: 200px;
-	height: 50px;
-	background: rgba(0,0,0,0.8);
-	padding: 10px;
-	overflow: hidden;
-	border-bottom-right-radius: 20px;
+	right: -300px;
+	bottom: 0;
+	width: 300px;
+	color: #666;
+	background: #181818;
+	z-index: 0;
+	margin-bottom: 48px;
+	box-shadow: 0 0 10px 0 black;
+	text-align: justify;
+	display: none;
 }
 
-#site-logo * {
-	position: absolute;
+#legal * {
+	margin: 10%;
 }
 
-#site-logo .logo {
-	top: 10px;
-	left: 10px;
-	width: 36px;
-	height: 48px;
-	padding: 2px;
+#legal a:hover {
+	color: #933;
+}
+
+/***
+*	NAVIGATION BUTTON (ONLY SHOWN WHEN IN MOBILE FORM)
+***/
+
+button#nav-btn {
+	position: fixed;
+	border: none;
+	color: #FFF;
 	background: #933;
-}
-
-#site-logo h1,
-#site-logo h2 {
-	left: 55px;
-}
-
-#site-logo h1 a {
-	text-decoration: none;
-	width: 14ex;
-	color: white;
-	font-size: 24px;
-	top: -1.1em;
-}
-
-#site-logo h2 {
-	font-size: 18px;
-	top: 1.1em;
+	font-size: 30px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	bottom: 10px;
+	right: 10px;
+	box-shadow: 0 0 10px 0 black;
 }
 
 @media screen and (max-width: 640px) {
 	nav {
 		display: none;
 	}
+	button#nav-btn {
+		display: block;
+	}
 	main section aside {
 		display: none;
 	}
+	
 }
 
 @media screen and (min-width: 640px) {
+	button#nav-btn {
+		display: none;
+	}
 	main section aside {
+		visibility: hidden;
 		text-align: left;
 		border-left: 2px white solid;
 		color: #FFF;
-		position: absolute;
+		background: rgba(0,0,0,0.4);
+		position: fixed;
 		padding-left: 20px;
 		padding-right: 20px;
-		right: 0px;
+		padding-bottom: 20px;
+		right: -245px;
 		top: 20px;
 		max-width: 200px;
+		transition: all 600ms;
+		opacity: 0;
+	}
+	main section.active aside {
+		visibility: visible;
+		opacity: 1;
+		right: 0;
 	}
 }

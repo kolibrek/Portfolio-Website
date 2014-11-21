@@ -1,4 +1,5 @@
 function playIntro() {
+	// Creates a border that slowly wraps around the KC logo.
 	var intro = $('#intro'),
 		bg_top = $('#intro .logo #background-layer #top'),
 		bg_right = $('#intro .logo #background-layer #right'),
@@ -12,6 +13,7 @@ function playIntro() {
 }
 
 $(document).ready(function () {
+	
 	if (sessionStorage.first_visit === undefined && $('#intro').length > 0) {
 		playIntro();
 		sessionStorage.first_visit = false;
@@ -19,7 +21,19 @@ $(document).ready(function () {
 		$('#intro').velocity({opacity: 0},{duration: 0, display: "none"});
 	}
 	
-	$(window).scroll(function (event) {
+	// Control the legal info pane with the button.
+	var legal_pushed = false;
+	$('#legal-btn').click(function (event) {
 		event.preventDefault();
-	});
+		var legal = $('#legal');
+		if (legal_pushed) {
+			$(this).removeClass('active');
+			legal.velocity({translateX: "100%"},{duration: 400, display: "none"});
+			legal_pushed = false;
+		} else {
+			$(this).addClass('active');
+			legal.velocity({translateX: "-100%"},{duration: 400, display: "block"});
+			legal_pushed = true;
+		}
+	});	
 });
