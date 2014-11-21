@@ -37,6 +37,11 @@ main section#digitus {
 	background-position: center;
 }
 
+main section#contemplation {
+	background-image: url(../images/photography/contemplation.png);
+	background-position: center;
+}
+
 main section#facefear {
 	background-image: url(../images/photoshop/KnightScreen2.png);
 	background-position: center bottom;
