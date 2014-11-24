@@ -46,6 +46,10 @@ h2 {
 	color: #A33;
 }
 
+.center {
+	text-align: center;
+}
+
 .right {
 	float: right;
 }
@@ -64,6 +68,33 @@ main {
 	padding: 0;
 	height: 100%;
 	width: 100%;
+	overflow: hidden;
+}
+
+main section {
+	background: #111;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+@media screen and (max-width: 640px) {
+	main section#about {
+		width: 95%;
+	}
+	main section#about {
+	padding: 1% 10px 18% 10px;
+}
+}
+
+@media screen and (min-width: 640px) {
+	main section#about {
+		width: 60%;
+		
+	}
+	main section#about {
+	padding: 1% 1% 5% 1%;
+}
 }
 
 /***

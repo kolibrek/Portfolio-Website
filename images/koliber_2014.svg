@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="244"
+   height="244"
+   id="koliber"
+   version="1.1">
+  <defs
+     id="defs4">
+    <filter
+       label="Drop Shadow"
+       id="filter4156"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         flood-opacity="0.5"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood4158" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite4160" />
+      <feGaussianBlur
+         stdDeviation="2"
+         result="blur"
+         id="feGaussianBlur4162" />
+      <feOffset
+         dx="-2.80331e-015"
+         dy="1"
+         result="offset"
+         id="feOffset4164" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite4166" />
+    </filter>
+    <filter
+       label="Drop Shadow"
+       id="filter4168"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         flood-opacity="0.5"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood4170" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite4172" />
+      <feGaussianBlur
+         stdDeviation="2"
+         result="blur"
+         id="feGaussianBlur4174" />
+      <feOffset
+         dx="-2.80331e-015"
+         dy="1"
+         result="offset"
+         id="feOffset4176" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite4178" />
+    </filter>
+  </defs>
+  <g id="koliber_logo"
+     style="display:inline">
+    <circle
+       style="fill:#222;fill-opacity:1;stroke:none"
+       cx="122"
+       cy="122"
+       r="122"
+       id="background" />
+    <g id="bird">
+      <path id="back"
+         d="m 100,100 c 2,19 68.12923,54.1984 122.13882,55.09812 -32.45486,-19.00156 -44.26558,-47.70975 -67.83704,-84.57908 L 98.55533,64.11408 36.96199,87.05438 C 7.59185,118.5043 16.99718,135.97741 22.09118,152.0497 c 11.6496,9.38212 31.20685,-10.50648 28.47708,-24.89422 -6.25467,-1.13172 -19.57387,-17.59436 -5.2289,-27.45993 l 37.4955,-13.68342 z"
+         style="fill:#404d1a;fill-opacity:1;stroke:none;filter:url(#filter4156)" />
+      <path  id="fore"
+         style="fill:#9abd33;fill-opacity:1;stroke:none;filter:url(#filter4168)"
+         d="m 60,60 c 27.74119,-19.22818 75.6891,-20.46889 116.8936,-3.34613 5.01013,1.58952 7.49316,4.19869 10.55135,10.16466 14.72744,7.42395 36.11269,22.20216 45.74886,33.99006 C 221.52483,91.7142 200.33753,82.73535 180.9739,81.33562 161.94415,92.71614 154.42192,95.15947 147.3782,101.41625 111.55162,130.75273 118.70207,177.35498 113.78945,213.98109 79.20272,183.48623 61.33812,121.29262 84.74874,94.85026 74.98784,94.89986 64.74472,95.75318 57.9797,90.80965 39.7172,97.51867 11.05622,109.79178 22.21398,148.64877 12.44057,130.27388 7.71127,94.80287 29.19035,82.22335 44.72486,75.98548 50.39829,67.55627 60,60 z" />
+      <circle id="eye"
+         r="3"
+         cy="75"
+         cx="165"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    </g>
+  </g>
+</svg>
