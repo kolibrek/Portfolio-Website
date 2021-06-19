@@ -1,0 +1,24 @@
+{
+	"photos": [
+		{
+			"image": "https://github.com/kolibrek/Portfolio-Website/blob/master/images/photography/beyond.png",
+			"name": "Beyond"
+		},
+		{
+			"image": "https://github.com/kolibrek/Portfolio-Website/blob/master/images/photography/contemplation.png",
+			"name": "Contemplation"
+		},
+		{
+			"image": "https://github.com/kolibrek/Portfolio-Website/blob/master/images/photography/depths.jpg",
+			"name": "Depths"
+		},
+		{
+			"image": "https://github.com/kolibrek/Portfolio-Website/blob/master/images/photography/disintegrate.png",
+			"name": "Disintegrate"
+		},
+		{
+			"image": "https://github.com/kolibrek/Portfolio-Website/blob/master/images/photography/keyboard_001.png",
+			"name": "Digitalis"
+		}
+		]
+}
